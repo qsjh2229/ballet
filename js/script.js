@@ -1,6 +1,8 @@
 const mainSlide = document.querySelector(".t-slide");
+const mainSlideWrap = document.querySelector(".text-slide");
 const mainSlideCon = document.querySelectorAll(".t-slide > li");
 const moveButton = document.querySelector(".allow");
+
 
 // 클론
 const cloneFi = mainSlideCon[0].cloneNode(true);
@@ -80,9 +82,9 @@ function stopSlide() {
 }
 
 // 마우스를 올렸을 때
-mainSlide.addEventListener('mouseover', stopSlide);
+mainSlideWrap.addEventListener('mouseover', stopSlide);
 // 마우스를 벗어났을 때
-mainSlide.addEventListener('mouseleave', mainAutoSlide);
+mainSlideWrap.addEventListener('mouseleave', mainAutoSlide);
 
 
 
@@ -142,6 +144,7 @@ function textPrev() {
 var swiper = new Swiper(".mySwiper", {
   effect: "cards",
   grabCursor: true,
+  touchRatio: 0,//드래그 금지
   navigation: {
     prevEl: '.swiper-button-prev',
     nextEl: '.swiper-button-next'

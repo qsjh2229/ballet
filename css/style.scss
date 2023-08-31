@@ -209,7 +209,8 @@ img{width: 100%; height: 100%;
        border: 1px solid rgba(255, 255, 255, 0); position: absolute; top: 50px; height: 83%; width: 100%; left: 50%;transform:  translateX(-50%); top: 10.5%; 
 
           .academy-wrap{display:  flex; flex-direction: row; justify-content: space-around; color: white; align-items: center; height: 70%; 
-            &::after{content: ""; background: url(../img/arrow.png) no-repeat center /100%; width: 50%; height: 20px; position: absolute; right: 0; bottom: 0;  }
+            &::after{content: "academySite"; font-size: 20px; background: url(../img/arrow.png) no-repeat top left /100%; width: 300px; height: 30px; position: absolute; right: 5%; top: 30%;  cursor: pointer;  text-align: left;
+            &:hover{}
             .imgbox{ flex-basis: 50%;  opacity: 0;transition: .5s;
             span{font-weight: 500; font-size: 35px;color: #f3f3f3;}}
             .textbox{flex-basis: 50%; font-size: 18px; opacity: 0; transition: 1s;
@@ -219,12 +220,12 @@ img{width: 100%; height: 100%;
     }
     }
   
-}
+} }
 #footer {
     margin: 0 auto;
     width: 100%;
     padding: 50px 0;
-    background: #ffffff;
+    background: #0f0f0f;
     > div {
       width: 100%;
       max-width: 1090px;
@@ -242,11 +243,11 @@ img{width: 100%; height: 100%;
                 display: inline-block;
                 width: 20px;
                 height: 2px;
-                background: #000000;
+                background: #888;
               }
             }
             > a {
-              color: #000000;
+              color: #ffffff;
               font-size: 14px;
             }
             .mapSub {
@@ -256,7 +257,7 @@ img{width: 100%; height: 100%;
                 li {
                   padding: 5px 0;
                   a {
-                    color: #888;
+                    color: #ffffff;
                   }
                 }
               }
@@ -268,14 +269,14 @@ img{width: 100%; height: 100%;
         display: flex;
         justify-content: space-between;
         .f-coptrihgt {
-          span {
+          span {display: block; color: white; margin-top: 20px;
             i {
             }
           }
         }
-        .f-sns {
+        .f-sns {width: 50%;text-align: right;
           span {
-            i {
+            i {color: white; padding-left: 1%;  font-size: 15px;
             }
           }
         }

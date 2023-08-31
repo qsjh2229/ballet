@@ -462,13 +462,19 @@ body {
   height: 70%;
 }
 #section4 .inner .academy-wrap::after {
-  content: "";
-  background: url(../img/arrow.png) no-repeat center/100%;
-  width: 50%;
-  height: 20px;
+  content: "academySite";
+  font-size: 20px;
+  background: url(../img/arrow.png) no-repeat top left/100%;
+  width: 300px;
+  height: 30px;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 5%;
+  top: 30%;
+  cursor: pointer;
+  text-align: left;
+}
+#section4 .inner .academy-wrap::after:hover {
+  box-shadow: 0.1 0.1 15px #f3f3f3;
 }
 #section4 .inner .academy-wrap .imgbox {
   flex-basis: 50%;
@@ -491,7 +497,7 @@ body {
   margin: 0 auto;
   width: 100%;
   padding: 50px 0;
-  background: #ffffff;
+  background: #0f0f0f;
 }
 #footer > div {
   width: 100%;
@@ -513,10 +519,10 @@ body {
   display: inline-block;
   width: 20px;
   height: 2px;
-  background: #000000;
+  background: #888;
 }
 #footer > div .f-sitemap > ul > li > a {
-  color: #000000;
+  color: #ffffff;
   font-size: 14px;
 }
 #footer > div .f-sitemap > ul > li .mapSub {
@@ -527,9 +533,23 @@ body {
   padding: 5px 0;
 }
 #footer > div .f-sitemap > ul > li .mapSub ul li a {
-  color: #888;
+  color: #ffffff;
 }
 #footer > div .f-copyright-sns {
   display: flex;
   justify-content: space-between;
+}
+#footer > div .f-copyright-sns .f-coptrihgt span {
+  display: block;
+  color: white;
+  margin-top: 20px;
+}
+#footer > div .f-copyright-sns .f-sns {
+  width: 50%;
+  text-align: right;
+}
+#footer > div .f-copyright-sns .f-sns span i {
+  color: white;
+  padding-left: 1%;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */
